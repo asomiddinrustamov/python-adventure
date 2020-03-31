@@ -70,3 +70,25 @@ while(decision == "" or decision > "2" or decision == 0 ):
         print("The money you have left is:")
         print(str(player_money))
 #  End section #
+
+# CoronaVirus
+print("################ c o r o n a v i r u s ################")
+print("You are in land of CoronaVirus")
+print("I suggest you to buy some weapons to fight with them")
+print("We got 2 rolls of toilet papers and 2 galons of water in stock, but NO hand sanitizers.\nWhat do you want to buy?")
+print("Please enter 1 for toilet papers and 2 for waters")
+decision = ""
+while(decision == '' or decision > "2" or decision == "0"):
+    decision = input("pick a number")
+    if (decision == "1"):
+        print(" [][] you got your weapon, but lost all your money. So Just wait for help. GAME OVER")
+        player_weapons.append("toilet_papers [][]")
+        print("new weapon: " + str(player_weapons))
+        player_money = player_money * 0.01
+        print("Money: " + str(player_money))
+
+        exit ()
+    elif (decision == "2"):
+        print("you got water, but you still got some money")
+        player_money = player_money * 0.5
+        print("good luck!")
